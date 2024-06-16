@@ -1,0 +1,359 @@
+.first-screen{
+    height: 100vh;
+    background: url(images/fon.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    overflow-x:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+body{
+    overflow-x:hidden;
+    margin: 0;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303B3E;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.main-menu{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.main-menu-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-menu-item:hover > .sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-menu-link{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #8AB3C6;
+}
+
+.main-menu-link:hover{
+    color: #2BAFDB;
+}
+
+.sub-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 20;
+    z-index: 2;
+    padding: 40px;
+    width: 140px;
+    background-color: #303B3E;
+    visibility: hidden;
+    opacity: o;
+    transition: all .3s;
+}
+
+.sub-menu_item{
+    border-color: transparent;
+    background-color: transparent;
+    color:#8AB3C6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+.sub-menu_item:hover{
+    color: #2BAFDB;
+}
+
+.sub-menu_item::after{
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #8AB3C6
+}
+.sub-menu_item:hover::after{
+    background-color: #2BAFDB;
+}
+.sub-menu_item:last-child{
+    margin-bottom: 0px;
+}
+.sub-menu_item:last-child::after{
+    display: none;
+}
+
+.sub-menu-link{
+    color: #8AB3C6;
+    text-decoration: none;
+}
+.sub-menu-link:hover{
+    color: #2BAFDB;
+}
+
+.main-header-right-button{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.main-header-right-button-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #5196AD;
+    text-align: center;
+}
+
+.div-select{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.select-status{
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.select-status-link{
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.select-status-link:link{
+    text-decoration: none;
+    color: #5196AD;
+}
+.select-status-link:active{
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 15px;
+}
+.select-status-link:visited{
+    color: #5196AD;
+}
+.select-status-link:hover{
+    color: #5196AD;
+}
+
+
+.table{
+    border-spacing: 10px;
+}
+
+.tableth{
+    text-align: left;
+}
+.tabletd{
+    text-align: left;
+    color: #F3EAF3;
+}
+
+.purchases{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #303B3E;    
+    border: 1px solid #FFFFFF;
+
+    width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #FFFFFF;
+}
+
+.changeBtn{
+    margin-top: 0px;
+    border-radius: 5px;
+    width: 120px;
+    height: 20px;
+    background-color: limegreen;
+}
+
+/* Убирает стрелки ↓↑ у полей с type=number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.product{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a b c";
+    grid-gap: 10px;
+    
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    height: 359px; 
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #FFFFFF;
+    background: #303B3E;
+}
+
+.div-img{
+    width: 289px;
+    height: 289px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    margin-right: 25px;
+    grid-area: a;
+    background-color: #F3EAF3;
+}
+.WH{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.WH img {
+    width: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.div-total-info{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 25px;
+    text-align: left;
+    grid-area: b;
+}
+
+.div-up{
+    font-size: 14px;
+    margin-top: 35px;
+    text-align: left;
+    grid-area: c;
+}
+
+.div-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "n m";
+    grid-gap: 10px;
+}
+.div-info{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    grid-area: n;
+}
+
+.div-data{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    grid-area: m;
+}
+
+.search-div {
+    margin-left: 1%;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+  
+.search-div form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.search{
+    color: #2BAFDB;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.input-pole{
+    width: 160px;
+}
+.textIDNotExist{
+   text-align: center;
+   color: orangered;
+}
+
+.div-user{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "v b";
+    grid-gap: 10px;
+    width: 700px;
+}
+
+.div-user-total{
+    display: flex;
+    margin-left: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    background-color: #142d35;
+    border: 1px solid #FFFFFF;
+}
+
+.div-user-info{
+    display: flex;
+    margin-left: 1%;
+    grid-area: v;
+}
+
+.div-user-data{
+    display: flex;
+    margin-left: 5%;
+    grid-area: b;
+}
+

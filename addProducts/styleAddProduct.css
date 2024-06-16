@@ -1,0 +1,231 @@
+.first-screen{
+    height: 100vh;
+    background: url(images/fon.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    overflow-x:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+body{
+    overflow-x:hidden;
+    margin: 0;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303B3E;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.main-menu{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.main-menu-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-menu-item:hover > .sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-menu-link{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #8AB3C6;
+}
+
+.main-menu-link:hover{
+    color: #2BAFDB;
+}
+
+.sub-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 20;
+    z-index: 2;
+    padding: 40px;
+    width: 140px;
+    background-color: #303B3E;
+    visibility: hidden;
+    opacity: o;
+    transition: all .3s;
+}
+
+.sub-menu_item{
+    border-color: transparent;
+    background-color: transparent;
+    color:#8AB3C6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+.sub-menu_item:hover{
+    color: #2BAFDB;
+}
+
+.sub-menu_item::after{
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #8AB3C6
+}
+.sub-menu_item:hover::after{
+    background-color: #2BAFDB;
+}
+.sub-menu_item:last-child{
+    margin-bottom: 0px;
+}
+.sub-menu_item:last-child::after{
+    display: none;
+}
+.sub-menu-link{
+    color: #8AB3C6;
+    text-decoration: none;
+}
+.sub-menu-link:hover{
+    color: #2BAFDB;
+}
+
+.main-header-right-button{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.main-header-right-button-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #5196AD;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;    
+}
+
+.main-div{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a"
+        "b";
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.addproduct{
+    grid-area: b;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 30px;
+    padding-top: 10px;
+    width: 400px;
+    height: auto;
+
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    background-color: #303B3E;
+}
+
+.text-select-type{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #5196AD;
+    text-align: center;
+}
+
+.select-type{
+    grid-area: a;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.select-type-link{
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.select-type-link:link{
+    text-decoration: none;
+    color: #5196AD;
+}
+.select-type-link:active{
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 15px;
+}
+.select-type-link:visited{
+    color: #5196AD;
+}
+.select-type-link:hover{
+    color: #5196AD;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.submitbtn{
+    margin-top: 5px;
+    width: 280px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 15px;
+    border: 3px solid #2F6417;
+    background-color: #498B2A;
+}
+
+/* Убирает стрелки ↓↑ у полей с type=number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
